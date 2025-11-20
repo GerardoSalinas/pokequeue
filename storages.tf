@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "saccount" {
-    name = "sa${lower(var.project)}${lower(var.environment)}"
+    name = "sa${lower(var.project)}${lower(var.environment)}25"
     resource_group_name = azurerm_resource_group.rg.name
     location = var.location
     account_tier = "Standard"
@@ -8,7 +8,7 @@ resource "azurerm_storage_account" "saccount" {
 }
 
 resource "azurerm_storage_account" "saccount2" {
-    name = "safunc${lower(var.project)}${lower(var.environment)}"
+    name = "safunc${lower(var.project)}${lower(var.environment)}2"
     resource_group_name = azurerm_resource_group.rg.name
     location = var.location
     account_tier = "Standard"

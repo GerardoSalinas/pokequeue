@@ -1,5 +1,5 @@
 resource "azurerm_service_plan" "sp" {
-    name = "sp-${ lower(var.project) }-${ lower(var.environment) }"
+    name = "sp-${ lower(var.project) }-${ lower(var.environment) }2"
     location = var.location
     resource_group_name = azurerm_resource_group.rg.name
     sku_name = "B1"
