@@ -5,5 +5,8 @@ resource "azurerm_linux_function_app" "serverless1" {
     service_plan_id = azurerm_service_plan.sp.id
     storage_account_name = azurerm_storage_account.saccount2.name
     site_config {
+        application_stack {
+            python_version = "3.11"
+        }
     }
 }
